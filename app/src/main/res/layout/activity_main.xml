@@ -16,34 +16,61 @@
             android:id="@+id/menuBarButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
             android:paddingTop="15dp"
             android:paddingBottom="15dp"
-            android:layout_alignParentStart="true"
             app:srcCompat="@drawable/ic_iconfinder_menu_lines_list_2931181" />
 
         <ImageView
-            android:id="@+id/historyButton"
+            android:id="@+id/emptySpace1"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_toEndOf="@id/menuBarButton"
             android:paddingTop="15dp"
             android:paddingBottom="15dp"
+            app:srcCompat="@drawable/empty_space" />
+
+        <ImageView
+            android:id="@+id/historyButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@id/emptySpace1"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
             app:srcCompat="@drawable/ic_iconfinder_icon_ios7_clock_outline_211606" />
 
         <ImageView
-            android:id="@+id/filesButton"
+            android:id="@+id/emptySpace2"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_toEndOf="@id/historyButton"
             android:paddingTop="15dp"
             android:paddingBottom="15dp"
+            app:srcCompat="@drawable/big_empty_space" />
+
+        <ImageView
+            android:id="@+id/filesButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@id/emptySpace2"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
             app:srcCompat="@drawable/ic_iconfinder_folder_storage_files_2931141" />
+
+        <ImageView
+            android:id="@+id/emptySpace3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@id/filesButton"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            app:srcCompat="@drawable/empty_space" />
 
         <ImageView
             android:id="@+id/searchButton"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_toEndOf="@id/filesButton"
+            android:layout_toEndOf="@id/emptySpace3"
             android:paddingTop="15dp"
             android:paddingBottom="15dp"
             app:srcCompat="@drawable/ic_iconfinder_search_zoom_fit_2931190" />
