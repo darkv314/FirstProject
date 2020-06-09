@@ -21,7 +21,7 @@
             android:layout_alignParentStart="true"
             android:paddingTop="15dp"
             android:paddingBottom="15dp"
-            app:srcCompat="@drawable/ic_iconfinder_menu_lines_list_2931181" />
+            app:srcCompat="@drawable/menu" />
 
         <LinearLayout
             android:id="@+id/emptySpace1"
@@ -39,7 +39,7 @@
             android:layout_toEndOf="@id/emptySpace1"
             android:paddingTop="15dp"
             android:paddingBottom="15dp"
-            app:srcCompat="@drawable/ic_iconfinder_icon_ios7_clock_outline_211606" />
+            app:srcCompat="@drawable/clock" />
 
         <LinearLayout
             android:id="@+id/emptySpace2"
@@ -57,7 +57,7 @@
             android:layout_toEndOf="@id/emptySpace2"
             android:paddingTop="15dp"
             android:paddingBottom="15dp"
-            app:srcCompat="@drawable/ic_iconfinder_folder_storage_files_2931141" />
+            app:srcCompat="@drawable/folder" />
 
         <LinearLayout
             android:id="@+id/emptySpace3"
@@ -75,7 +75,7 @@
             android:layout_toEndOf="@id/emptySpace3"
             android:paddingTop="15dp"
             android:paddingBottom="15dp"
-            app:srcCompat="@drawable/ic_iconfinder_search_zoom_fit_2931190" />
+            app:srcCompat="@drawable/search" />
 
     </RelativeLayout>
 
@@ -94,7 +94,7 @@
                 android:layout_height="98dp"
                 android:paddingTop="25dp"
                 android:paddingBottom="25dp"
-                android:src="@drawable/ic_iconfinder_gallery_2199104">
+                android:src="@drawable/gallery">
 
             </ImageView>
 
@@ -104,7 +104,7 @@
                 android:layout_height="98dp"
                 android:paddingTop="15dp"
                 android:paddingBottom="15dp"
-                android:src="@drawable/ic_iconfinder_icon_ios7_play_outline_211800">
+                android:src="@drawable/play">
 
             </ImageView>
 
@@ -114,7 +114,7 @@
                 android:layout_height="98dp"
                 android:paddingTop="30dp"
                 android:paddingBottom="30dp"
-                android:src="@drawable/ic_iconfinder_logo_brand_brands_logos_docs_google_1907187">
+                android:src="@drawable/files">
 
             </ImageView>
 
@@ -124,7 +124,7 @@
                 android:layout_height="98dp"
                 android:paddingTop="25dp"
                 android:paddingBottom="25dp"
-                android:src="@drawable/ic_iconfinder_multimedia_22_2849814">
+                android:src="@drawable/music">
 
             </ImageView>
 
@@ -134,7 +134,7 @@
                 android:layout_height="98dp"
                 android:paddingTop="20dp"
                 android:paddingBottom="20dp"
-                android:src="@drawable/ic_iconfinder_file__apk__android__3209598">
+                android:src="@drawable/apk_file">
 
             </ImageView>
 
@@ -144,7 +144,7 @@
                 android:layout_height="98dp"
                 android:paddingTop="20dp"
                 android:paddingBottom="20dp"
-                android:src="@drawable/ic_iconfinder_icon_ios7_download_outline_211734">
+                android:src="@drawable/download">
 
             </ImageView>
 
@@ -154,7 +154,7 @@
                 android:layout_height="98dp"
                 android:paddingTop="30dp"
                 android:paddingBottom="30dp"
-                android:src="@drawable/ic_iconfinder_icon_ios7_more_outline_211780">
+                android:src="@drawable/more">
 
             </ImageView>
 
@@ -202,7 +202,7 @@
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
                 android:padding="20dp"
-                android:src="@drawable/ic_iconfinder_image_227584">
+                android:src="@drawable/image_preview">
 
             </ImageView>
 
@@ -210,7 +210,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="20dp"
-                android:src="@drawable/ic_iconfinder_image_227584">
+                android:src="@drawable/image_preview">
 
             </ImageView>
 
@@ -249,7 +249,7 @@
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
                 android:padding="20dp"
-                android:src="@drawable/ic_iconfinder_44_movie_2123940">
+                android:src="@drawable/movie">
 
             </ImageView>
 
@@ -257,7 +257,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="20dp"
-                android:src="@drawable/ic_iconfinder_44_movie_2123940">
+                android:src="@drawable/movie">
 
             </ImageView>
 
