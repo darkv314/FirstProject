@@ -1,53 +1,268 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
     tools:context=".MainActivity">
 
     <RelativeLayout
         android:id="@+id/topBar"
         android:layout_width="match_parent"
         android:layout_height="55dp"
-        android:orientation="horizontal">
+        android:background="@color/colorPrimaryDark">
 
         <ImageView
             android:id="@+id/menuBarButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
             android:paddingTop="15dp"
             android:paddingBottom="15dp"
-            android:layout_alignParentStart="true"
             app:srcCompat="@drawable/ic_iconfinder_menu_lines_list_2931181" />
+
+        <LinearLayout
+            android:id="@+id/emptySpace1"
+            android:layout_width="56dp"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@id/menuBarButton"
+            android:orientation="horizontal">
+
+        </LinearLayout>
 
         <ImageView
             android:id="@+id/historyButton"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_toEndOf="@id/menuBarButton"
+            android:layout_toEndOf="@id/emptySpace1"
             android:paddingTop="15dp"
             android:paddingBottom="15dp"
             app:srcCompat="@drawable/ic_iconfinder_icon_ios7_clock_outline_211606" />
+
+        <LinearLayout
+            android:id="@+id/emptySpace2"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@id/historyButton"
+            android:orientation="horizontal">
+
+        </LinearLayout>
 
         <ImageView
             android:id="@+id/filesButton"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_toEndOf="@id/historyButton"
+            android:layout_toEndOf="@id/emptySpace2"
             android:paddingTop="15dp"
             android:paddingBottom="15dp"
             app:srcCompat="@drawable/ic_iconfinder_folder_storage_files_2931141" />
+
+        <LinearLayout
+            android:id="@+id/emptySpace3"
+            android:layout_width="56dp"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@id/filesButton"
+            android:orientation="horizontal">
+
+        </LinearLayout>
 
         <ImageView
             android:id="@+id/searchButton"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_toEndOf="@id/filesButton"
+            android:layout_toEndOf="@id/emptySpace3"
             android:paddingTop="15dp"
             android:paddingBottom="15dp"
             app:srcCompat="@drawable/ic_iconfinder_search_zoom_fit_2931190" />
 
     </RelativeLayout>
 
-</RelativeLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="196dp">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnCount="4">
+
+            <ImageView
+                android:id="@+id/imageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="98dp"
+                android:paddingTop="25dp"
+                android:paddingBottom="25dp"
+                android:src="@drawable/ic_iconfinder_gallery_2199104">
+
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/videoButton"
+                android:layout_width="wrap_content"
+                android:layout_height="98dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:src="@drawable/ic_iconfinder_icon_ios7_play_outline_211800">
+
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/docsButton"
+                android:layout_width="wrap_content"
+                android:layout_height="98dp"
+                android:paddingTop="30dp"
+                android:paddingBottom="30dp"
+                android:src="@drawable/ic_iconfinder_logo_brand_brands_logos_docs_google_1907187">
+
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/musicButton"
+                android:layout_width="wrap_content"
+                android:layout_height="98dp"
+                android:paddingTop="25dp"
+                android:paddingBottom="25dp"
+                android:src="@drawable/ic_iconfinder_multimedia_22_2849814">
+
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/apkButton"
+                android:layout_width="wrap_content"
+                android:layout_height="98dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:src="@drawable/ic_iconfinder_file__apk__android__3209598">
+
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/downloadButton"
+                android:layout_width="wrap_content"
+                android:layout_height="98dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:src="@drawable/ic_iconfinder_icon_ios7_download_outline_211734">
+
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/moreButton"
+                android:layout_width="wrap_content"
+                android:layout_height="98dp"
+                android:paddingTop="30dp"
+                android:paddingBottom="30dp"
+                android:src="@drawable/ic_iconfinder_icon_ios7_more_outline_211780">
+
+            </ImageView>
+
+        </GridLayout>
+
+    </FrameLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="440dp"
+        android:columnCount="1">
+
+        <LinearLayout
+            android:id="@+id/viewScreenshots"
+            android:background="@color/colorAccent"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/mini_gallery">
+
+            </ImageView>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:text="Screenshots">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/images1"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:padding="20dp"
+                android:src="@drawable/ic_iconfinder_image_227584">
+
+            </ImageView>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:src="@drawable/ic_iconfinder_image_227584">
+
+            </ImageView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:background="@color/colorAccent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/mini_play">
+
+            </ImageView>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:text="Movies">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:padding="20dp"
+                android:src="@drawable/ic_iconfinder_44_movie_2123940">
+
+            </ImageView>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:src="@drawable/ic_iconfinder_44_movie_2123940">
+
+            </ImageView>
+
+        </LinearLayout>
+
+    </GridLayout>
+
+</LinearLayout>
