@@ -130,11 +130,11 @@
 
     </GridLayout>
 
-    <GridLayout
+    <LinearLayout
         android:id="@+id/preview"
         android:layout_width="match_parent"
         android:layout_height="440dp"
-        android:columnCount="1">
+        android:orientation="vertical">
 
         <LinearLayout
             android:id="@+id/viewScreenshots"
@@ -232,6 +232,6 @@
 
         </LinearLayout>
 
-    </GridLayout>
+    </LinearLayout>
 
 </LinearLayout>
