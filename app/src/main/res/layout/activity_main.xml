@@ -52,89 +52,83 @@
 
     </LinearLayout>
 
-    <FrameLayout
+    <GridLayout
         android:id="@+id/midBar"
         android:layout_width="match_parent"
-        android:layout_height="196dp">
+        android:layout_height="196dp"
+        android:columnCount="4">
 
-        <GridLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:columnCount="4">
+        <ImageView
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="98dp"
+            android:paddingTop="25dp"
+            android:paddingBottom="25dp"
+            android:src="@drawable/gallery">
 
-            <ImageView
-                android:id="@+id/imageButton"
-                android:layout_width="wrap_content"
-                android:layout_height="98dp"
-                android:paddingTop="25dp"
-                android:paddingBottom="25dp"
-                android:src="@drawable/gallery">
+        </ImageView>
 
-            </ImageView>
+        <ImageView
+            android:id="@+id/videoButton"
+            android:layout_width="wrap_content"
+            android:layout_height="98dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:src="@drawable/play">
 
-            <ImageView
-                android:id="@+id/videoButton"
-                android:layout_width="wrap_content"
-                android:layout_height="98dp"
-                android:paddingTop="15dp"
-                android:paddingBottom="15dp"
-                android:src="@drawable/play">
+        </ImageView>
 
-            </ImageView>
+        <ImageView
+            android:id="@+id/docsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="98dp"
+            android:paddingTop="30dp"
+            android:paddingBottom="30dp"
+            android:src="@drawable/files">
 
-            <ImageView
-                android:id="@+id/docsButton"
-                android:layout_width="wrap_content"
-                android:layout_height="98dp"
-                android:paddingTop="30dp"
-                android:paddingBottom="30dp"
-                android:src="@drawable/files">
+        </ImageView>
 
-            </ImageView>
+        <ImageView
+            android:id="@+id/musicButton"
+            android:layout_width="wrap_content"
+            android:layout_height="98dp"
+            android:paddingTop="25dp"
+            android:paddingBottom="25dp"
+            android:src="@drawable/music">
 
-            <ImageView
-                android:id="@+id/musicButton"
-                android:layout_width="wrap_content"
-                android:layout_height="98dp"
-                android:paddingTop="25dp"
-                android:paddingBottom="25dp"
-                android:src="@drawable/music">
+        </ImageView>
 
-            </ImageView>
+        <ImageView
+            android:id="@+id/apkButton"
+            android:layout_width="wrap_content"
+            android:layout_height="98dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:src="@drawable/apk_file">
 
-            <ImageView
-                android:id="@+id/apkButton"
-                android:layout_width="wrap_content"
-                android:layout_height="98dp"
-                android:paddingTop="20dp"
-                android:paddingBottom="20dp"
-                android:src="@drawable/apk_file">
+        </ImageView>
 
-            </ImageView>
+        <ImageView
+            android:id="@+id/downloadButton"
+            android:layout_width="wrap_content"
+            android:layout_height="98dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:src="@drawable/download">
 
-            <ImageView
-                android:id="@+id/downloadButton"
-                android:layout_width="wrap_content"
-                android:layout_height="98dp"
-                android:paddingTop="20dp"
-                android:paddingBottom="20dp"
-                android:src="@drawable/download">
+        </ImageView>
 
-            </ImageView>
+        <ImageView
+            android:id="@+id/moreButton"
+            android:layout_width="wrap_content"
+            android:layout_height="98dp"
+            android:paddingTop="30dp"
+            android:paddingBottom="30dp"
+            android:src="@drawable/more">
 
-            <ImageView
-                android:id="@+id/moreButton"
-                android:layout_width="wrap_content"
-                android:layout_height="98dp"
-                android:paddingTop="30dp"
-                android:paddingBottom="30dp"
-                android:src="@drawable/more">
+        </ImageView>
 
-            </ImageView>
-
-        </GridLayout>
-
-    </FrameLayout>
+    </GridLayout>
 
     <GridLayout
         android:id="@+id/preview"
