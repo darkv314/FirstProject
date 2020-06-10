@@ -80,6 +80,7 @@
     </RelativeLayout>
 
     <FrameLayout
+        android:id="@+id/midBar"
         android:layout_width="match_parent"
         android:layout_height="196dp">
 
@@ -163,6 +164,7 @@
     </FrameLayout>
 
     <GridLayout
+        android:id="@+id/preview"
         android:layout_width="match_parent"
         android:layout_height="440dp"
         android:columnCount="1">
